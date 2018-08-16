@@ -10,7 +10,7 @@
     function initHeader() {
         width = window.innerWidth;
         height = window.innerHeight;
-        target = {x: width / 2, y: height / 2};
+        target = { x: width / 1, y: height / 1 };
 
         // largeHeader = document.getElementById('large-header');
         // largeHeader.style.height = height+'px';
@@ -26,7 +26,7 @@
             for (var y = 0; y < height; y = y + height / 30) {
                 var px = x + Math.random() * width / 30;
                 var py = y + Math.random() * height / 30;
-                var p = {x: px, originX: px, y: py, originY: py};
+                var p = { x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
         }
